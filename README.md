@@ -36,11 +36,6 @@ Libraries
 
 **PHP 5.6 + - download** [here](http://php.net/) **.**
 
-**Downloader.php** - A PHP Library (A free to use file download library created
-by Jack Mason )
-
-This is included in the included Download below.
-
 **JQuery** – download from [here](http://jquery.com/) **or visit the website**
 <http://jquery.com>.
 
