@@ -8,6 +8,7 @@ This is a delayed File-Downloader which can download virtually any file directly
 to your PC or Mobile. A selector box is populated with files from a folder. The
 Selected file from the Selector box is downloaded.
 
+
 Project Scope
 -------------
 
@@ -27,6 +28,11 @@ Coding Difficulty
 
 **Medium**. Good knowledge of **Javascript/Ajax** and **PHP** required would
 help.
+
+View
+----
+**View Live Example - https://www.bayeseanblog.com/blog/public/demo/download/index.php
+**.
 
 Libraries
 ---------
