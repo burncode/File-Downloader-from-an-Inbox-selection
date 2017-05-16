@@ -1,4 +1,4 @@
-File Downloader from an Inbox selection
+ File Downloader from an Inbox selection
 =======================================
 
 Background
@@ -31,7 +31,7 @@ help.
 Libraries
 ---------
 
-**Bootstrap 3 Framework –**download here or visit the website at
+**Bootstrap 3 Framework –** download here or visit the website at
 **http://getbootstrap.com**.
 
 **PHP 5.6 + - download** [here](http://php.net/) **.**
