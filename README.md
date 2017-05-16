@@ -431,6 +431,67 @@ directory that your browser points to.
 
 **\</code\>**
 
+The final code is the calling of the **downloader.php** file that forces the
+download of the files.
+
+**\<?php**
+
+**function download(\$file\_name)**
+
+**{**
+
+**if(is\_file(\$file\_name)) {**
+
+**if(ini\_get('zlib.output\_compression')) {
+ini\_set('zlib.output\_compression', 'Off'); }**
+
+**// get the file mime type using the file extension**
+
+**switch(strtolower(substr(strrchr(\$file\_name, '.'), 1))) {**
+
+**case '7z' : \$mime = 'application/x-7z-compressed'; break;**
+
+The code has too many mime optons to include here…….
+
+**default: \$mime = 'application/force-download';**
+
+**}**
+
+**header('Pragma: public');**
+
+**header('Expires: 0'); //0 is no cache**
+
+**header('Cache-Control: must-revalidate, post-check=0, pre-check=0');**
+
+**header('Last-Modified: '.gmdate ('D, d M Y H:i:s', filemtime (\$file\_name)).'
+GMT');**
+
+**header('Cache-Control: private',false);**
+
+**header('Content-Type: '.\$mime);**
+
+**header('Content-Disposition: attachment;
+filename="'.basename(\$file\_name).'"');**
+
+**header('Content-Transfer-Encoding: binary');**
+
+**header('Content-Length: '.filesize(\$file\_name)); // provide the full file
+size**
+
+**header('Connection: close');**
+
+**readfile(\$file\_name); //Standard push the file to browser**
+
+**exit();**
+
+**}**
+
+**}**
+
+**?\>**
+
+**\</code\>**
+
 **Author**
 
 **Greg Bayes** - [Bayesean Blog](https://www.bayeseanblog.com/).
