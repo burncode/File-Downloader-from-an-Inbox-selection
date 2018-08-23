@@ -34,9 +34,9 @@ help.
 Libraries
 ---------
 
-**Bootstrap 4 Framework –**download here.
+**Bootstrap 4 Framework.**
 
-**PHP 5.6 + download** here **.**
+**PHP 5.6.**
 
 **Downloader.php** - A PHP Library (A free to use file download library created
 by Jack Mason )
@@ -48,8 +48,8 @@ This is included in the included Download below.
 
 **Javascript.**
 
-Structure 
-----------
+Structure
+---------
 
 **Index.php**
 
