@@ -12,7 +12,7 @@
 <div class = "container">
 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 <br>
-<h3>Download a file with delay timer <span class = 'glyphicon glyphicon-download-alt' aria-hidden='true'>  </span> <span class = "pull-right" ><a class="btn btn-sm btn-success" href="index.php"><span class='glyphicon glyphicon-home' aria-hidden='true'></span></a></span></h3>
+<h3>Download a file with delay timer</h3>
 <hr>
 <form class="form-horizontal" form method="POST" action="download.php">
          <div class="form-group">

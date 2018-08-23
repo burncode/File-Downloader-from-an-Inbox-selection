@@ -24,36 +24,42 @@ if ( !empty($_POST)) {
       </form>
     </div>
     <script type = "text/javascript">
-    $("#myId").removeClass("hidden");
-    $("#myimg").removeClass("hidden");
-    </Script>
+    $("#myId").removeClass("d-none");
+    $("#myimg").removeClass("d-none");
+    </script>
 
     <div class="container">
-      <div class=" col-xs-6 col-md-6 col-lg-6">
-        <div class="row">
-          <!--<div class="row">-->
-          <p><a class="btn btn-sm btn-success" href="index.php"><span class='glyphicon glyphicon-home' aria-hidden='true'></span></a></p>
-          <h1 class="page-header"> Download <span class ='glyphicon glyphicon-download-alt' aria-hidden='true'></span><small> <span class="label label-warning" style="float:right"><?php echo " ".$SelectFile." " ?>
-           </span></small></h1>
-                <div class = "progress">
-              <div class = "progress-bar" id ="progress-bar" role = "progressbar" aria-valuenow ="70" aria-valuemin ="0" aria-valuemax = "100"
-                style= "width:0%;">
-              </div>
+      <div class=" col-md-6">
+        <br>
+           <p><a class="btn btn-sm btn-success" href="index.php">Back</a></p>
+            <hr>
+          <h2> Delayed Download Bayesean Blog  </h2>
+          <p> File To Download <strong><?php echo " ".$SelectFile." " ?></strong></p>
+                 <div class = "progress">
+            <div class = "progress-bar bg-success" id ="progress-bar" role = "progressbar" aria-valuenow ="70" ria-valuemin ="0" aria-valuemax = "100"
+              style= "width:0%;">
             </div>
-
-            <div class= "hidden" id = "myId" >
+            </div>
+<br>
+<br>
+<br>
+            <div class= "d-none" id = "myId" >
               <div class = text-center>
-                <p><a class="btn btn-lg btn-success"  href="download2.php"> Download <span class = 'glyphicon glyphicon-download-alt' aria-hidden='true'></span></a></p>
+                <p><a class="btn btn-success btn-lg "  href="download2.php"  role = "button" > Download </a></p>
               </div>
             </div>
             <hr>
-            <div class= "hidden" id = "myimg" >
-              <p><img  class ="img-responsive"  src="img/downarrow.png"  width = "95px" height= "80px"alt "Chania"><p>
+            <br>
+            <div class= "d-none" id = "myimg" >
+              <p><img  class ="img-responsive"  src="img/downarrow.png"  width = "120px" height= "160px"alt "Chania"><p>
               </div>
+             
 
             </div>
             </div> <!-- /bootstrap sizing -->
             </div> <!-- /container -->
+
+            
             <!-- start the progressbar;-->
               <script type = "text/javascript">
             var w = document.getElementById("progress-bar").style.width;
@@ -74,8 +80,8 @@ if ( !empty($_POST)) {
             var Id = setInterval(ProgressSteps,stepdelay);
             function ProgressSteps(){
             if (width > 99){
-            $("#myId").removeClass("hidden");
-            $("#myimg").removeClass("hidden");
+            $("#myId").removeClass("d-none");
+            $("#myimg").removeClass("d-none");
             document.getElementById("progress-bar").innerHTML =varinfo2;
             return;
             window.close();
@@ -85,7 +91,7 @@ if ( !empty($_POST)) {
             dcount = 100 - width;
             document.getElementById("progress-bar").style.width=width+"%";
             document.getElementById("progress-bar").innerHTML =varinfo + " "+ dcount;
-            }
+                       }
             }
             }
             </script>
